@@ -24,10 +24,12 @@ public class NimiSovellus {
         Henkilo ville = new Henkilo("Ville", 24); 
         Henkilo anna = new Henkilo("Anna", 6);
         Henkilo antti = new Henkilo("Antti", 22);
+        Henkilo sanna = new Henkilo("Sanna", 5);
         // jne.
         valiaikainen.lisaa(ville);
         valiaikainen.lisaa(anna);
         valiaikainen.lisaa(antti);
+        valiaikainen.lisaa(sanna);
         // jne.
         
         return valiaikainen;
