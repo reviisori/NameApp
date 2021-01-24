@@ -11,10 +11,24 @@ public class NimiSovellus {
         Kayttoliittyma tani = new Kayttoliittyma(lukija, rekisteri);
         tani.kaynnista();
     }
-    
+    // tämä metodi toimii väliaikaisena keinona toteuttaa ohjelma,
+    // tarkoituksenaan lopulta toimia .json tiedostojen lukija
     public static Henkilostorekisteri valiaikainen() {
         
         Henkilostorekisteri valiaikainen = new Henkilostorekisteri();
+        
+        // toimivuuttaa voi kokeilla luomalla henkilöitä ja lisäämällä niitä
+        // palautettavaan Henkilöstörekisteriin
+        // esimerkiksi:
+        
+        Henkilo ville = new Henkilo("Ville", 24); 
+        Henkilo anna = new Henkilo("Anna", 6);
+        Henkilo antti = new Henkilo("Antti", 22);
+        // jne.
+        valiaikainen.lisaa(ville);
+        valiaikainen.lisaa(anna);
+        valiaikainen.lisaa(antti);
+        // jne.
         
         return valiaikainen;
     }
